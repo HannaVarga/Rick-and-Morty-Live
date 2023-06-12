@@ -1,4 +1,22 @@
-*root {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@100;400&family=Nunito+Sans:wght@300&family=Sen:wght@400;700&display=swap');
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Sen', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --primary-bg: rgb(102, 92, 171);
+    --light-theme-btn: #430f58;
+    --dark-theme-btn: #c3195d;
+    --white: white;
 }
