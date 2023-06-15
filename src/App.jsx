@@ -1,21 +1,29 @@
 import { useState } from 'react'
+import{BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import Hompage from './pages/Hompage/Hompage'
+import HomePage from './pages/HomePage/HomePage'
+import Episodes from './pages/Episodes/Episodes'
+import About from './pages/About/About'
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
-  return (
-    <div className='App'>
-<Header />
-<Hompage />
-<Footer />
-    </div>
-  )
+return (
+  <BrowserRouter>
+    
+        <Header />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/episodes' element={<Episodes />} />
+        </Routes>
+        <Footer />
+    
+  </BrowserRouter>
+)
 }
-
 export default App
